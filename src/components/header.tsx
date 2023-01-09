@@ -15,6 +15,10 @@ const links: Link[] = [
     label: "About",
     url: "/turtlehead-tacos",
   },
+  {
+    label: "Blog",
+    url: "/blog",
+  },
 ];
 
 const Header = () => {
