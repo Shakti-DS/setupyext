@@ -18,6 +18,7 @@ import StaticMap from "../components/static-map";
 import Favicon from "../public/yext-favicon.ico";
 import "../index.css";
 
+
 export const config: TemplateConfig = {
   stream: {
     $id: "my-stream-id-1",
@@ -57,7 +58,7 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
 };
 
 export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
-  return [`index/${document.id.toString()}`];
+  return [`index-old/${document.id.toString()}`];
 };
 
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
@@ -107,6 +108,8 @@ const Location: Template<TemplateRenderProps> = ({
     photoGallery,
     c_descriptionInfo,
   } = document;
+
+
 
   return (
     <>
@@ -161,6 +164,8 @@ const Location: Template<TemplateRenderProps> = ({
                 <p className="pt-4">{c_descriptionInfo?.description}</p>
               </div>
             </div>
+
+
           </div>
         </div>
       </PageLayout>
