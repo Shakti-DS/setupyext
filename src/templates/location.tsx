@@ -17,6 +17,8 @@ import PageLayout from "../components/page-layout";
 import StaticMap from "../components/static-map";
 import Favicon from "../public/yext-favicon.ico";
 import "../index.css";
+import axios from "axios";
+
 export const config: TemplateConfig = {
   stream: {
     $id: "my-stream-id-1",
@@ -33,6 +35,7 @@ export const config: TemplateConfig = {
       "geocodedCoordinate",
       "services",
       "photoGallery",
+      "c_descriptionInfo",
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -103,7 +106,26 @@ const Location: Template<TemplateRenderProps> = ({
     services,
     description,
     photoGallery,
+    c_descriptionInfo,
   } = document;
+
+  const [apiData, setApiData] = React.useState([]);
+
+  var config = {
+    method: "get",
+    url: "https://liveapi-sandbox.yext.com/v2/accounts/me/entities?api_key=aae38614d0701660f74015c1c1fe1587&v=20230110&entityTypes=location",
+    headers: {},
+  };
+
+  axios(config)
+    .then(function (response) {
+      setApiData(response?.data?.response?.entities);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  React.useEffect(() => { }, [apiData]);
 
   return (
     <>
@@ -117,7 +139,7 @@ const Location: Template<TemplateRenderProps> = ({
                 {services && <List list={services}></List>}
               </div>
               <div className="bg-gray-100 p-2">
-                {photoGallery.map((imgs) => {
+                {photoGallery.map((imgs: any) => {
                   return (
                     <>
                       <img src={imgs?.image?.url} alt="44" />
@@ -133,10 +155,87 @@ const Location: Template<TemplateRenderProps> = ({
                   longitude={geocodedCoordinate.longitude}
                 ></StaticMap>
               )}
+
+              <div>
+                <img
+                  src={c_descriptionInfo?.image?.url}
+                  alt=""
+                  style={{ height: "100px", width: "100px" }}
+                />
+
+                {/* <a href={c_descriptionInfo?.url}>ClickUrl</a> */}
+              </div>
+              <div>
+                <a
+                  href={c_descriptionInfo?.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Click Me Redirect to Website
+                </a>
+              </div>
+
               <div className="bg-gray-100 p-2">
                 <div className="text-xl font-semibold">{`About ${name}`}</div>
-                <p className="pt-4">{description}</p>
+                <p className="pt-4">{c_descriptionInfo?.description}</p>
               </div>
+            </div>
+
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Region</th>
+                    <th>Postel Code</th>
+                    <th>Country Code</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Go to my Page</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {apiData.map((data: any) => {
+                    return (
+                      <tr>
+                        <td data-column="First Name">{data?.meta?.id}</td>
+                        <td data-column="Last Name">{data?.name}</td>
+                        <td data-column="Twitter">
+                          <p>{data?.address?.line1}</p>
+                        </td>
+                        <td data-column="Job Title"> {data?.address?.city}</td>
+                        <td data-column="Twitter">{data?.address?.region}</td>
+                        <td data-column="Twitter">
+                          {data?.address?.postalCode}
+                        </td>
+                        <td data-column="Twitter">
+                          {data?.address?.countryCode}
+                        </td>
+                        <td>{data?.c_descriptionInfo?.description}</td>
+                        <td>
+                          <img
+                            src={data?.c_descriptionInfo?.image?.url}
+                            style={{ width: "200px", height: "100px" }}
+                          />
+                        </td>
+                        <td>
+                          <a
+                            href={data?.c_descriptionInfo?.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Click Me
+                          </a>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

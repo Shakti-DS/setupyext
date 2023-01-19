@@ -18,12 +18,6 @@ const Footer = () => {
         </svg>
         <div className="footer-content">
           <div className="footer-content-column">
-            <div className="footer-logo">
-              <a className="footer-logo-link" href="#">
-                <span className="hidden-link-text">LOGO</span>
-                <h1>LOGO</h1>
-              </a>
-            </div>
             <div className="footer-menu">
               <h2 className="footer-menu-name"> Get Started</h2>
               <ul id="menu-get-started" className="footer-menu-list">
@@ -191,7 +185,7 @@ const Footer = () => {
           <div className="footer-copyright-wrapper">
             <p className="footer-copyright-text">
               <a className="footer-copyright-link" href="#" target="_self">
-                ©2020. | Designed By: Pooja Nahelia. | All rights reserved.
+                ©20203 | Designed By: Shakti Singh. | All rights reserved.
               </a>
             </p>
           </div>

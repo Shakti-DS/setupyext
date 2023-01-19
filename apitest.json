@@ -1,0 +1,220 @@
+{
+  "meta": { "uuid": "01859b31-3857-1058-bbeb-fc39a339b87c", "errors": [] },
+  "response": {
+    "entities": [
+      {
+        "address": {
+          "line1": "Jawahar Lal Nehru Marg, Rajasthan University Campus, Talvandi, Jaipur, Rajasthan",
+          "city": "jaipur",
+          "region": "Rajasthan",
+          "postalCode": "302004",
+          "countryCode": "IN"
+        },
+        "addressHidden": false,
+        "logo": {
+          "image": {
+            "url": "https://a.mktgcdn.com/p-sandbox/-e7N5VXO_aXxRCc5FLvkxqYsdiuP4atFIKQVLjdO16A/220x220.png",
+            "width": 220,
+            "height": 220,
+            "thumbnails": [
+              {
+                "url": "https://a.mktgcdn.com/p-sandbox/-e7N5VXO_aXxRCc5FLvkxqYsdiuP4atFIKQVLjdO16A/220x220.png",
+                "width": 220,
+                "height": 220
+              },
+              {
+                "url": "https://a.mktgcdn.com/p-sandbox/-e7N5VXO_aXxRCc5FLvkxqYsdiuP4atFIKQVLjdO16A/196x196.png",
+                "width": 196,
+                "height": 196
+              }
+            ]
+          }
+        },
+        "name": "rajasthan university",
+        "cityCoordinate": { "latitude": 26.9124336, "longitude": 75.7872709 },
+        "photoGallery": [
+          {
+            "image": {
+              "url": "https://a.mktgcdn.com/p-sandbox/RCjUCRVI0-Hj68ePnhk6-5L-qa5FIjsUNaleuU3Pp70/220x220.png",
+              "width": 220,
+              "height": 220,
+              "thumbnails": [
+                {
+                  "url": "https://a.mktgcdn.com/p-sandbox/RCjUCRVI0-Hj68ePnhk6-5L-qa5FIjsUNaleuU3Pp70/220x220.png",
+                  "width": 220,
+                  "height": 220
+                }
+              ]
+            }
+          }
+        ],
+        "mainPhone": "+918932244515",
+        "timezone": "Asia/Calcutta",
+        "yextDisplayCoordinate": {
+          "latitude": 26.8881413,
+          "longitude": 75.8134696
+        },
+        "meta": {
+          "accountId": "3191960",
+          "uid": "31007354",
+          "id": "5586535663153664130",
+          "timestamp": "2023-01-09T12:49:02",
+          "folderId": "0",
+          "schemaTypes": ["CollegeOrUniversity"],
+          "language": "en",
+          "countryCode": "IN",
+          "entityType": "location"
+        },
+        "categoryIds": ["968"],
+        "timeZoneUtcOffset": "+05:30"
+      },
+      {
+        "address": {
+          "line1": "Ground Floor, Near Naturals Icecream, A-5, C scheme chomu circle, Sardar Patel Marg, Jaipur, Rajasthan",
+          "city": "Jaipur",
+          "region": "Rajasthan",
+          "postalCode": "302007",
+          "countryCode": "IN"
+        },
+        "addressHidden": false,
+        "name": "Starbucks Coffee",
+        "cityCoordinate": { "latitude": 26.9124336, "longitude": 75.7872709 },
+        "photoGallery": [
+          {
+            "image": {
+              "url": "https://a.mktgcdn.com/p-sandbox/QjczOfRQNXEWNKLTTaN9pqrVRGF9f6qTJOGtSNd8rHo/680x510.jpg",
+              "width": 680,
+              "height": 510,
+              "thumbnails": [
+                {
+                  "url": "https://a.mktgcdn.com/p-sandbox/QjczOfRQNXEWNKLTTaN9pqrVRGF9f6qTJOGtSNd8rHo/680x510.jpg",
+                  "width": 680,
+                  "height": 510
+                }
+              ]
+            }
+          }
+        ],
+        "mainPhone": "+919079125825",
+        "timezone": "Asia/Calcutta",
+        "yextDisplayCoordinate": {
+          "latitude": 26.9115208,
+          "longitude": 75.7966436
+        },
+        "meta": {
+          "accountId": "3191960",
+          "uid": "31115336",
+          "id": "3153367549615492624",
+          "timestamp": "2023-01-10T05:33:04",
+          "folderId": "0",
+          "schemaTypes": ["CafeOrCoffeeShop"],
+          "language": "en",
+          "countryCode": "IN",
+          "entityType": "location"
+        },
+        "categoryIds": ["1322912"],
+        "timeZoneUtcOffset": "+05:30"
+      },
+      {
+        "address": {
+          "line1": "The Grand Anukampa, Elevated Ajmer Rd, Exit, Jaipur, Rajasthan",
+          "city": "Jaipur",
+          "region": "Rajasthan",
+          "postalCode": "302015",
+          "countryCode": "IN"
+        },
+        "addressHidden": false,
+        "name": "Diona - Ale Works",
+        "cityCoordinate": { "latitude": 26.9124336, "longitude": 75.7872709 },
+        "photoGallery": [
+          {
+            "image": {
+              "url": "https://a.mktgcdn.com/p-sandbox/XoYTYJSkCnOjno0nrmSHa9TOHQKvqM8CnfKFMbmDjD4/680x510.jpg",
+              "width": 680,
+              "height": 510,
+              "thumbnails": [
+                {
+                  "url": "https://a.mktgcdn.com/p-sandbox/XoYTYJSkCnOjno0nrmSHa9TOHQKvqM8CnfKFMbmDjD4/680x510.jpg",
+                  "width": 680,
+                  "height": 510
+                }
+              ]
+            }
+          }
+        ],
+        "mainPhone": "+919485698742",
+        "timezone": "Asia/Calcutta",
+        "yextDisplayCoordinate": {
+          "latitude": 26.8995662,
+          "longitude": 75.7688537
+        },
+        "meta": {
+          "accountId": "3191960",
+          "uid": "31116287",
+          "id": "3318475640131200382",
+          "timestamp": "2023-01-10T05:37:11",
+          "folderId": "0",
+          "schemaTypes": ["LocalBusiness"],
+          "language": "en",
+          "countryCode": "IN",
+          "entityType": "location"
+        },
+        "categoryIds": ["1135496"],
+        "timeZoneUtcOffset": "+05:30"
+      },
+      {
+        "address": {
+          "line1": "Crystal Court Mall, Rooftop, Malviya Nagar Rd, Rajasthan",
+          "city": "Jaipur",
+          "region": "Rajasthan",
+          "postalCode": "302017",
+          "countryCode": "IN"
+        },
+        "addressHidden": false,
+        "name": "OTB On The Bar BQ",
+        "cityCoordinate": { "latitude": 26.9124336, "longitude": 75.7872709 },
+        "photoGallery": [
+          {
+            "image": {
+              "url": "https://a.mktgcdn.com/p-sandbox/mnAcsRGpo7OY48-T-1KIZSnCJXt36VHQS5O3tMzl4Ak/680x382.jpg",
+              "width": 680,
+              "height": 382,
+              "thumbnails": [
+                {
+                  "url": "https://a.mktgcdn.com/p-sandbox/mnAcsRGpo7OY48-T-1KIZSnCJXt36VHQS5O3tMzl4Ak/680x382.jpg",
+                  "width": 680,
+                  "height": 382
+                }
+              ]
+            }
+          }
+        ],
+        "geocodedCoordinate": {
+          "latitude": 26.8561602,
+          "longitude": 75.80703129999999
+        },
+        "isoRegionCode": "RJ",
+        "mainPhone": "+919654895456",
+        "timezone": "Asia/Calcutta",
+        "yextDisplayCoordinate": {
+          "latitude": 26.8561602,
+          "longitude": 75.80703129999999
+        },
+        "meta": {
+          "accountId": "3191960",
+          "uid": "31117004",
+          "id": "6856680480444452664",
+          "timestamp": "2023-01-10T05:41:50",
+          "folderId": "0",
+          "schemaTypes": ["LocalBusiness"],
+          "language": "en",
+          "countryCode": "IN",
+          "entityType": "location"
+        },
+        "categoryIds": ["1135496"],
+        "timeZoneUtcOffset": "+05:30"
+      }
+    ],
+    "count": 4
+  }
+}

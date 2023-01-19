@@ -1,0 +1,10 @@
+ Get End point = https://liveapi-sandbox.yext.com/v2/accounts/me/entities?api_key=aae38614d0701660f74015c1c1fe1587&v=20230110&entityTypes=location
+
+ Get APi End point custom emtity = https://liveapi-sandbox.yext.com/v2/accounts/me/entities?api_key=aae38614d0701660f74015c1c1fe1587&v=20230110&entityTypes=ce_product
+
+
+Geo Location URL = https://liveapi-sandbox.yext.com/v2/accounts/me/entities/geosearch?api_key=aae38614d0701660f74015c1c1fe1587&v=20230110&location=jaipur&radius=100
+
+
+                  
+

@@ -31,32 +31,26 @@ const Header = () => {
   ));
 
   return (
-    <div className="bg-gray-50">
-      <div className="centered-container">
-        <nav className="py-6 flex items-center justify-between">
-          <div className="flex gap-x-4 items-center">
-            <img
-              src="https://cdn.fs.brandfolder.com/cache=expiry:604800/deY3VGFpSjC761Abjbfc"
-              width="50"
-              height="50"
-            ></img>
-            <div className="flex gap-x-4 text-sm font-semibold text-body">
-              {linkDoms}
-            </div>
-          </div>
-          <div className="space-x-5"></div>
-          <div className="flex gap-x-4">
-            <div className=" h-12 pt-4 ">
-              <Cta
-                buttonText="Order Online"
-                url="#"
-                style="text-white bg-orange shadow-xl"
-              ></Cta>
-            </div>
-          </div>
+    <header className="header-fixed">
+      <div className="header-limiter">
+        <h1>
+          <a href="#">
+            Company<span>logo</span>
+          </a>
+        </h1>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#" className="selected">
+            Blog
+          </a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Faq</a>
+          <a href="#">Contact</a>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

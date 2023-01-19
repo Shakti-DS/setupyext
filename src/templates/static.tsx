@@ -19,31 +19,12 @@ import Card from "../components/card";
 import { ExternalImage } from "../types/ExternalImage";
 import Favicon from "../public/yext-favicon.ico";
 
-/**
- * Not required depending on your use case.
- */
 export const config: TemplateConfig = {
-  // The name of the feature. If not set the name of this file will be used (without extension).
-  // Use this when you need to override the feature name.
   name: "turtlehead-tacos",
 };
 
-/**
- * A local type for transformProps. This could live in src/types but it's generally
- * best practice to keep unshared types local to their usage.
- */
 type ExternalImageData = TemplateProps & { externalImage: ExternalImage };
 
-/**
- * Used to either alter or augment the props passed into the template at render time.
- * This function will be run during generation and pass in directly as props to the default
- * exported function.
- *
- * This can be used when data needs to be retrieved from an external (non-Knowledge Graph)
- * source. This example calls a public API and returns the data.
- *
- * If the page is truly static this function is not necessary.
- */
 export const transformProps: TransformProps<ExternalImageData> = async (
   data
 ) => {
@@ -54,12 +35,6 @@ export const transformProps: TransformProps<ExternalImageData> = async (
   return { ...data, externalImage };
 };
 
-/**
- * Defines the path that the generated file will live at for production.
- *
- * NOTE: This currently has no impact on the local dev path. Local dev urls currently
- * take on the form: featureName/entityId
- */
 export const getPath: GetPath<ExternalImageData> = () => {
   return `index.html`;
 };
@@ -68,14 +43,7 @@ type ExternalImageRenderData = TemplateRenderProps & {
   externalImage: ExternalImage;
 };
 
-
-/**
- * This allows the user to define a function which will take in their template
- * data and produce a HeadConfig object. When the site is generated, the HeadConfig
- * will be used to generate the inner contents of the HTML document's <head> tag.
- * This can include the title, meta tags, script tags, etc.
- */
- export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
+export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
   relativePrefixToRoot,
   path,
   document,
@@ -95,20 +63,15 @@ type ExternalImageRenderData = TemplateRenderProps & {
       {
         type: "link",
         attributes: {
-          rel: 'icon',
-          type: 'image/x-icon',
-          href: Favicon
+          rel: "icon",
+          type: "image/x-icon",
+          href: Favicon,
         },
-      }
+      },
     ],
   };
 };
 
-
-/**
- * This is the main template. It can have any name as long as it's the default export.
- * The props passed in here are the direct result from `getStaticProps`.
- */
 const Static: Template<ExternalImageRenderData> = ({
   relativePrefixToRoot,
   path,
@@ -128,11 +91,11 @@ const Static: Template<ExternalImageRenderData> = ({
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              enim ad minim veniam, quis nostrud exercitation ullages labor's
+              nisi ut aliquip ex ea commodo consequat. Duis aute inure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugit nulla
+              pariatur. Excepteur sint occaecat cupidatat non provident, sunt in
+              culpa qui officia deserunt mollie anim id est labarum.
             </p>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
