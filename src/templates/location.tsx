@@ -20,7 +20,7 @@ import "../index.css";
 
 export const config: TemplateConfig = {
   stream: {
-    $id: "my-stream-id-1",
+    $id: "my-stream-id-2",
     fields: [
       "id",
       "uid",
@@ -35,6 +35,7 @@ export const config: TemplateConfig = {
       "services",
       "photoGallery",
       "c_descriptionInfo",
+
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -117,8 +118,10 @@ const Location: Template<TemplateRenderProps> = ({
         <div className="centered-container">
           <div className="section">
             <div className="grid grid-cols-2 gap-x-10 gap-y-10">
-              <div className="bg-gray-100 p-2 " style={{ display: "flex", gap: "20px" }}>
-
+              <div
+                className="bg-gray-100 p-2 "
+                style={{ display: "flex", gap: "20px" }}
+              >
                 <div className="bg-gray-100 p-2">
                   {photoGallery.map((imgs: any) => {
                     return (
@@ -127,7 +130,6 @@ const Location: Template<TemplateRenderProps> = ({
                       </>
                     );
                   })}
-
                 </div>
 
                 <div>
@@ -136,7 +138,6 @@ const Location: Template<TemplateRenderProps> = ({
 
                   <div> {hours && <Hours hours={hours} />}</div>
                 </div>
-
               </div>
 
               {geocodedCoordinate && (

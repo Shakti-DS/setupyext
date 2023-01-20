@@ -14,6 +14,7 @@ import {
     TemplateRenderProps,
 } from "@yext/pages";
 import "../index.css";
+import Search from "../components/Seach";
 
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
     return `index.html`;
@@ -36,7 +37,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
                     content: document.description,
                 },
             },
-      ],
+        ],
   };
 };
 
@@ -63,20 +64,25 @@ const StoreLocator = (title: any, url: string, imps: string) => {
     return (
         <>
             <Header />
-            {apiData?.response?.entities?.map((item: any) => {
-          console.log("item", item);
+          <div>
+              <Search />
+          </div>
+
+          {apiData?.response?.entities?.map((item: any) => {
+              console.log("item", item);
+
           return (
               <>
                   <div>
                       <Card
-                          title={item?.name}
-                          url={item?.address?.line1}
-                          imps={item?.logo?.image?.url}
-                          phn={item?.mainPhone}
-                      />
-                  </div>
-              </>
-          );
+                        title={<a href={item.slug}> {item?.name}</a>}
+                        url={item?.address?.line1}
+                        imps={item?.logo?.image?.url}
+                        phn={item?.mainPhone}
+                    />
+                </div>
+            </>
+        );
       })}
 
           <Footer />
