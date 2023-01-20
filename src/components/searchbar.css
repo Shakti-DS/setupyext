@@ -13,7 +13,7 @@ body {
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #00b4cc;
+  border: 3px solid #004658;
   border-right: none;
   padding: 5px;
   height: 20px;
@@ -23,14 +23,14 @@ body {
 }
 
 .searchTerm:focus {
-  color: #00b4cc;
+  color: #004658;
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #00b4cc;
-  background: #00b4cc;
+  border: 1px solid #004658;
+  background: #004658;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;

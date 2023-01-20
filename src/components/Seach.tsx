@@ -1,5 +1,5 @@
 import * as React from "react";
-import '../components/searchbar.css'
+import "../components/searchbar.css";
 
 type Props = {};
 

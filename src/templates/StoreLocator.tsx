@@ -75,7 +75,7 @@ const StoreLocator = (title: any, url: string, imps: string) => {
               <>
                   <div>
                       <Card
-                        title={<a href={item.slug}> {item?.name}</a>}
+                          title={<a href={item.slug}> {item?.name}</a>}
                         url={item?.address?.line1}
                         imps={item?.logo?.image?.url}
                         phn={item?.mainPhone}

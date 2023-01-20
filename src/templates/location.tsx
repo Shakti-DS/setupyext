@@ -35,7 +35,6 @@ export const config: TemplateConfig = {
       "services",
       "photoGallery",
       "c_descriptionInfo",
-
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -170,6 +169,46 @@ const Location: Template<TemplateRenderProps> = ({
                 <div className="text-xl font-semibold">{`About ${name}`}</div>
                 <p className="pt-4">{c_descriptionInfo?.description}</p>
               </div> */}
+
+              <div className="bg-gray-100 p-2">
+                <div className="text-xl font-semibold">
+                  <h2> {`About ${name}`}</h2>
+                </div>
+
+                <p className="pt-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptatum autem quae nobis libero dolorum culpa consequuntur
+                  tempora, maiores labore quaerat pariatur, facere asperiores
+                  distinctio ipsam doloribus neque maxime consequatur
+                  perferendis!Lorem Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Harum at officia similique obcaecati odio!
+                  Id cum accusamus expedita, ipsum repellendus dolorum alias
+                  aperiam natus recusandae! Accusamus, quae? Ipsa, eos sequi!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  aliquid voluptates recusandae repellendus quae deserunt, quasi
+                  sequi numquam suscipit cum voluptate illum modi aperiam, harum
+                  aut inventore ipsum magnam fuga. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Voluptatibus cum nihil eveniet
+                  magnam alias. Deleniti autem doloribus quas nesciunt
+                  voluptates? Inventore explicabo ullam ab delectus omnis quas
+                  culpa quisquam ex? Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sequi maxime iusto hic dolore quam officia.
+                  Fugiat quam reprehenderit, adipisci obcaecati dicta, incidunt
+                  cupiditate dolore, vel autem nobis doloremque quod magni.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Necessitatibus fuga velit quidem laudantium, laborum culpa
+                  optio quo illum placeat commodi hic voluptatum excepturi
+                  recusandae dolores odit, nisi voluptatibus doloremque
+                  deserunt. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Perspiciatis consectetur accusantium minima, adipisci
+                  fugit obcaecati consequatur a nulla animi quasi hic ipsam in
+                  culpa voluptate voluptas possimus, distinctio earum at.
+                  deserunt. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Perspiciatis consectetur accusantium minima, adipisci
+                  fugit obcaecati consequatur a nulla animi quasi hic ipsam in
+                  culpa voluptate voluptas possimus, distinctio earum at.
+                </p>
+              </div>
             </div>
           </div>
         </div>
