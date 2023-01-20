@@ -68,12 +68,12 @@ const StoreLocator = (title: any, url: string, imps: string) => {
       fetchData();
   }, []);
 
-    console.log("apiData", apiData);
+
     return (
         <>
             <Header />
           {apiData?.response?.entities?.map((item: any) => {
-              console.log("item", item);
+
               return (
                   <>
                       <div>
@@ -81,6 +81,7 @@ const StoreLocator = (title: any, url: string, imps: string) => {
                           title={item?.name}
                           url={item?.address?.line1}
                           imps={item?.logo?.image?.url}
+                              phn={item?.mainPhone}
                       />
                   </div>
               </>
