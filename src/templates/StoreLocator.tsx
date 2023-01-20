@@ -36,16 +36,8 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
                     content: document.description,
                 },
             },
-            // {
-            //     type: "link",
-            //     attributes: {
-            //         rel: "icon",
-            //         type: "image/x-icon",
-            //         href: Favicon,
-            //     },
-            // },
-        ],
-    };
+      ],
+  };
 };
 
 const StoreLocator = (title: any, url: string, imps: string) => {
@@ -68,20 +60,19 @@ const StoreLocator = (title: any, url: string, imps: string) => {
       fetchData();
   }, []);
 
-
     return (
         <>
             <Header />
-          {apiData?.response?.entities?.map((item: any) => {
-
-              return (
-                  <>
-                      <div>
+            {apiData?.response?.entities?.map((item: any) => {
+          console.log("item", item);
+          return (
+              <>
+                  <div>
                       <Card
                           title={item?.name}
                           url={item?.address?.line1}
                           imps={item?.logo?.image?.url}
-                              phn={item?.mainPhone}
+                          phn={item?.mainPhone}
                       />
                   </div>
               </>

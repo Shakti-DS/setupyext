@@ -18,7 +18,6 @@ import StaticMap from "../components/static-map";
 import Favicon from "../public/yext-favicon.ico";
 import "../index.css";
 
-
 export const config: TemplateConfig = {
   stream: {
     $id: "my-stream-id-1",
@@ -109,7 +108,7 @@ const Location: Template<TemplateRenderProps> = ({
     c_descriptionInfo,
   } = document;
 
-
+  console.log("description===>", c_descriptionInfo);
 
   return (
     <>
@@ -118,21 +117,28 @@ const Location: Template<TemplateRenderProps> = ({
         <div className="centered-container">
           <div className="section">
             <div className="grid grid-cols-2 gap-x-10 gap-y-10">
-              <div className="bg-gray-100 p-2">
-                <Details address={address} phone={mainPhone}></Details>
-                {services && <List list={services}></List>}
-              </div>
-              <div className="bg-gray-100 p-2">
-                {photoGallery.map((imgs: any) => {
-                  return (
-                    <>
-                      <img src={imgs?.image?.url} alt="44" />
-                    </>
-                  );
-                })}
+              <div className="bg-gray-100 p-2 " style={{ display: "flex", gap: "20px" }}>
 
-                {hours && <Hours title={"Restaurant Hours"} hours={hours} />}
+                <div className="bg-gray-100 p-2">
+                  {photoGallery.map((imgs: any) => {
+                    return (
+                      <>
+                        <img src={imgs?.image?.url} alt="44" />
+                      </>
+                    );
+                  })}
+
+                </div>
+
+                <div>
+                  <Details address={address} phone={mainPhone}></Details>
+                  {services && <List list={services}></List>}
+
+                  <div> {hours && <Hours hours={hours} />}</div>
+                </div>
+
               </div>
+
               {geocodedCoordinate && (
                 <StaticMap
                   latitude={geocodedCoordinate.latitude}
@@ -140,16 +146,16 @@ const Location: Template<TemplateRenderProps> = ({
                 ></StaticMap>
               )}
 
-              <div>
+              {/* <div>
                 <img
                   src={c_descriptionInfo?.image?.url}
                   alt=""
                   style={{ height: "100px", width: "100px" }}
                 />
 
-                {/* <a href={c_descriptionInfo?.url}>ClickUrl</a> */}
-              </div>
-              <div>
+              </div> */}
+              {/* <a href={c_descriptionInfo?.url}>ClickUrl</a> */}
+              {/* <div>
                 <a
                   href={c_descriptionInfo?.url}
                   rel="noopener noreferrer"
@@ -162,10 +168,8 @@ const Location: Template<TemplateRenderProps> = ({
               <div className="bg-gray-100 p-2">
                 <div className="text-xl font-semibold">{`About ${name}`}</div>
                 <p className="pt-4">{c_descriptionInfo?.description}</p>
-              </div>
+              </div> */}
             </div>
-
-
           </div>
         </div>
       </PageLayout>

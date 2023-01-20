@@ -23,6 +23,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@headlessui/react": "^1.7.7",
     "@mui/material": "^5.11.3",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",

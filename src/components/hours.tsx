@@ -138,9 +138,9 @@ const DayRow = (props: DayRow) => {
 
 const Hours = (props: Hours) => {
   const { title, hours } = props;
-
+  // console.log('props', props)
   return (
-    <>
+    <div style={{ height: "600px", width: "500px" }}>
       <div className="text-xl font-semibold mb-4">{title}</div>
       <table>
         <thead className="sr-only">
@@ -151,7 +151,7 @@ const Hours = (props: Hours) => {
         </thead>
         {renderHours(hours)}
       </table>
-    </>
+    </div>
   );
 };
 
